@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Nhóm 20</title>
+</head>
+<body>
+    <table id="table1">
+        <tr style='background-color:rgb(255,192,203)'>
+            <th>ID</th>
+            <th>Họ tên</th>
+            <th>Số điện thoại</th>
+            <th>ID phim truyện đã thuê</th>
+            <th>Thời gian thuê</th>
+            <th>Số tiền cược</th>
+            <th>Tổng tiền</th>
+        </tr>
+        <input type="button" onclick="inra()" value="start1"/>
+    </table>
+    <h1>Customers</h1>
+    <form action="/add/:customersid/:name/:tel/:id_film/:rental_period/:money_bet/:total_money">
+        <ul>
+            <li>ID:  <input type="text"  id="customersid" value="" size="20" /></li>
+            <br><li>Họ tên: <input type="text" id="name" value="" size="20" /></li>
+            <br> <li>Số điện thoại: <input type="text" id="tel" value="" size="20" /></li>
+            <br><li>ID phim truyện đã thuê: <input type="text" id="id_film" value="" size="20" /></li>
+            <br> <li>Thời gian thuê: <input type="timestamp" id="Rental_period" value="" size="20" /></li>
+            <br> <li>Số tiền cược: <input type="text" value="" id="money_bet" size="20" /></li>
+            <br><li>Tổng tiền: <input type="text" id="total_money" value="" size="20" /></li>
+        </ul>
+        <p><input type="submit" value="Thêm mới" onclick="add1()"> </p>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+<table>
+    <table id="table2">
+        <tr style='background-color:rgb(255,192,203)'>
+            <th>ID</th>
+        <th>Tên phim</th>
+        <th>Đạo diễn </th>
+        <th>Năm xuất bản</th>
+        <th>Thể loại</th>
+        <th>Giá thuê theo ngày</th>
+        <th>Thời gian</th>
+        <th>Dung lượng</th>
+        <th>Độ phân giải</th>
+        </tr>
+        <input type="button" onclick="inra1()" value="start2"/>
+    </table>
+    <h1>Film</h1>
+    <form action="">
+        <ul>
+            <li>ID:  <input type="text" value="" size="20" /></li>
+            <br><li>Tên phim: <input type="text" value="" size="20" /></li>
+            <br> <li>Đạo diễn: <input type="text" value="" size="20" /></li>
+            <br><li>Năm xuất bản: <input type="year" value="" size="20" /></li>
+            <br> <li>Thể loại: <input type="text" value="" size="20" /></li>
+            <br> <li>Giá thuê theo ngày: <input type="text" value="" size="2" /></li>
+            <br><li>Thời gian: <input type="timestamp" value="" size="20" /></li>
+            <br><li>Dung lượng: <input type="text" value="" size="20" /></li>
+            <br><li>Độ phân giải: <input type="text" value="" size="20" /></li>
+        </ul>
+        <p><input type="submit" value="Thêm mới"></p>
+    </form>
+</table>
+
+
+
+
+<table>
+    <table id="table3">
+        <tr style='background-color:rgb(255,192,203)'>
+            <th>ID</th>
+        <th>Tên truyện</th>
+        <th>Tác giả </th>
+        <th>Năm xuất bản</th>
+        <th>Thể loại</th>
+        <th>Giá thuê theo ngày</th>
+        <th>Số trang</th>
+        <th>Khổ giấy </th>
+        <th>Ngôn ngữ</th>
+        </tr>
+        <input type="button" onclick="inra3()" value="start3"/>
+    </table>
+<table>
+    <h1>Commic</h1>
+    <form action="">
+        <ul>
+            <li>ID:  <input type="text" value="" size="20" /></li>
+            <br><li>Tên truyện: <input type="text" value="" size="20" /></li>
+            <br> <li>Tác giả: <input type="text" value="" size="20" /></li>
+            <br><li>Năm sáng tác: <input type="year" value="" size="20" /></li>
+            <br> <li>Thể loại: <input type="text" value="" size="20" /></li>
+            <br> <li>Số trang: <input type="text" value="" size="2" /></li>
+            <br><li>Khổ giấy: <input type="text" value="" size="20" /></li>
+            <br><li>Ngôn ngữ: <input type="text" value="" size="20" /></li>
+        </ul>
+        <p><input type="submit" value="Thêm mới"></p>
+    </form>
+</table>
+
+<script src="./js/main.js" ></script>
+<script src="./js/error.js"> </script>
+</body>
+</html>
